@@ -1,0 +1,187 @@
+/*************
+COLORS:
+- PRIMARY: #e67e22
+***************/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+*:focus {
+    outline: none;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1;
+    color: #555;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.btn, .btn:link, .btn:visited {
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    border-radius: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition:  all 0.5s;
+}
+
+.btnFull:link, .btnFull:visited {
+    background-color: #e67e22;
+    color: #ffffff;
+}
+
+.btnFull:hover, .btnFull:active {
+    background-color: #ac580e;
+}
+
+.btnOutline:link, .btnOutline:visited {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.btnOutline:hover, .btnOutline:active {
+    background-color: #fdf2e9;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+.btnForm:hover {
+    background-color: #efefef;
+    color: #45260a;
+}
+
+.btnForm {
+    background-color: #45260a;
+    color: #fdf2e9;
+    padding: 1.2rem;
+
+}
+
+.flexEnd {
+    display: flex;
+    align-items: end;
+}
+
+/*************
+RE-USABLE ELEMENTS
+***************/
+.headingPrimary, .headingPrimary {
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #333;
+}
+
+.headingPrimary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+}
+.headingSecondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+.headingTertiary {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+.subHeading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+.marginButtonSn {
+    margin-bottom: 3.2rem !important;
+}
+
+.marginButtonMd {
+    margin-bottom: 6.4rem !important;
+}
+
+.marginRightSn {
+    margin-right: 1.6rem !important;
+}
+
+/****************GRID ELEMENTS ******************/
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid:last-child {
+    margin-bottom: 0;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid--5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid---center-v {
+    align-items: center;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.link:link, .link:visited {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+.link:hover, .link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+

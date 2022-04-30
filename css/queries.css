@@ -1,0 +1,318 @@
+/*********************************
+for smaller laptop (max-width: 1200px)
+*********************************/
+@media (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .headingPrimary {
+        font-size: 4.4rem;
+        line-height: 1.05;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*********************************
+for landscap tables (max-width: 1200px)
+*********************************/
+
+@media (max-width: 76em) {
+    html {
+        font-size: 56.2%;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .mainNavList {
+        gap: 2.8rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .headingSecondary {
+        font-size: 3.6rem;
+    }
+
+    .headingTertiary {
+        font-size: 2.4rem;
+
+    }
+
+
+    .testimonialContainer {
+        padding: 9.6rem 3.2rem;
+    }
+
+}
+
+
+/*********************************
+for portrate levels (max-width: 940px)
+*********************************/
+
+@media (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .logo {
+        height: 2.4rem;
+    }
+
+    .btnMobileNav {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .mainNav {
+        height: 100vh;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.95);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*stepforhiddinganelement*/
+        /*1.opacity*/
+        opacity: 0;
+        /*2.pointer-event*/
+        pointer-events: none;
+        /*3.visibility*/
+        visibility: hidden;
+        transition: all 1s ease-in;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+
+    .navOpen>.mainNav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+    }
+
+    .mainNavList {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .mainNavLink:link,
+    .mainNavLink:visited {
+        font-size: 2.4rem;
+    }
+
+
+    .navOpen .iconMobileNav[name="menu"] {
+        display: none;
+    }
+
+    .navOpen .iconMobileNav[name="close"] {
+        display: block;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+
+    }
+
+    .heroTextBox,
+    .heroImageBox {
+        text-align: center;
+    }
+
+    .heroImage {
+        width: 60%;
+    }
+
+    .deliveredMeals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .stepNumber {
+        font-size: 7.4rem;
+    }
+
+    .mealContents {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+
+    .sectionTestimonials {
+        grid-template-columns: 1fr;
+
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .pricingPlanStarter {
+        padding: 3rem;
+    }
+
+    .pricingPlanComplete {
+        padding: 3.2rem;
+    }
+
+    .CTA {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .CTAform {
+        grid-template-columns: 1fr;
+    }
+
+    .btnForm {
+        margin-top: 1.2rem;
+        width: 100%;
+    }
+
+
+}
+
+
+/*********************************
+for small tables (max-width: 704px)
+*********************************/
+
+@media (max-width: 44em) {
+
+    .headingSecondary {
+        margin-bottom: 4.8rem;
+    }
+
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diet {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .pricingPlan {
+        width: 100%;
+    }
+
+    .grid--footer {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .navCol {
+        grid-column: span 2;
+        margin-top: 3.2rem;
+    }
+
+    .logoCol,
+    .addressCol {
+        grid-column: span 3;
+    }
+
+
+}
+
+/*********************************
+for smaller phones (max-width: 550px)
+*********************************/
+@media (max-width: 35em) {
+
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionHero {
+        padding: 2.8rem 0 6.4rem 0;
+    }
+
+    .hero {
+        padding: 0 2.4rem;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+
+        padding: 2.4rem 1.6rem;
+
+    }
+
+    .heroImage {
+        width: 80%;
+    }
+
+    .logos img {
+        height: 1.2rem;
+    }
+
+    .stepTextBox {
+        transform: translateY(-2.4rem);
+    }
+
+    .rowOne {
+        grid-row: 1;
+    }
+
+    .rowFive {
+        grid-row: 5;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .CTA {
+        grid-template-columns: 1fr;
+    }
+
+    .CTATextBox {
+        padding: 3.2rem;
+    }
+
+    .CTAImgBox {
+        height: 32rem;
+        grid-row: 1;
+    }
+
+}
